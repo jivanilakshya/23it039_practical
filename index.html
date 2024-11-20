@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --main-bg-color: #2874f0;
+        }
+
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        footer {
+            background: var(--main-bg-color);
+            color: aliceblue;
+            height: 75px;;
+            font-family: "Roboto", sans-serif;
+        }
+
+        header {
+            background: var(--main-bg-color);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 9vh;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            padding: 0 15px;
+            font-size: 25px;
+        }
+
+        nav ul li a {
+            color: aliceblue;
+            text-decoration: none;
+            font-family: "Roboto", sans-serif;
+        }
+
+        nav ul li a:hover {
+            color: #7ea0d7;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+            padding: 0 20px 0px;
+        }
+
+        .more {
+            display: flex;
+            position: relative;
+            bottom: 45px;
+
+            margin-left: 95vw;
+            background: #2874f0;
+            color: #ffffff;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+            border: none;
+            border-radius: 2px;
+            padding: 5px 10px;
+            font-size: 13px;
+            font-weight: 500;
+            vertical-align: super;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search button {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .search input {
+            height: 3vh;
+            width: 30vw;
+            border-radius: 4px;
+            margin: 0 11px 0 45px;
+            padding: 5px 12px;
+        }
+
+        .btn {
+            padding: 1px 10px;
+            margin: 6px;
+            border-radius: 5px;
+            border: solid wheat;
+            color: antiquewhite;
+            background-color: var(--main-bg-color);
+            cursor: pointer;
+            width: 60px;
+        }
+
+        .image {
+            width: 70px;
+        }
+
+        .slider {
+            margin: 15px;
+            width: 80vw;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .card {
+            max-width: 91vw;
+            margin: 22px auto;
+            overflow: hidden;
+            display: flow-root;
+        }
+
+        .card-item {
+            display: inline-flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 12px;
+        }
+
+        .text-center {
+            text-align: center;
+            justify-content: center;
+        }
+
+        .cards {
+            display: flex;
+            overflow: scroll;
+            margin: 0 15px 0 55px;
+            scroll-behavior: smooth;
+        }
+
+        h3:hover {
+            color: var(--main-bg-color);
+        }
+
+        h3 {
+            background-color: #e5e5e5;
+            display: flex;
+        }
+
+        .lines:hover {
+            color: var(--main-bg-color);
+            text-decoration: underline;
+        }
+
+        .Explore {
+            position: relative;
+            top: 20px;
+            right: 120px;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: rgb(255, 255, 255);
+        }
+
+        .Explore1 {
+            position: relative;
+            top: 20px;
+            right: 118px;
+            font-size: 16px;
+            font-family: sans-serif;
+            color: #ffe500;
+        }
+
+        .Explore2:hover {
+            text-decoration: underline;
+        }
+
+        .plus-img {
+            position: relative;
+            top: 47px;
+            right: 115px;
+            width: 11px;
+            height: 10px;
+        }
+
+        .all-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .my1 {
+            padding: 15px 10px 15px 10px;
+
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                    alt="" - srcset="" />
+                <div class="Explore Explore2">Explore</div>
+                <div class="Explore1 Explore2"> plus
+                </div>
+            </div>
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contant.html">contant</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" name="" id="" placeholder="search here" />
+
+                <button class="btn">search</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="slider">
+                <img src="1.jpg" alt="1.jpg" />
+            </div>
+            <h3 class="my1">shoping </h3>
+            <div class="more">VIEW ALL</div>
+
+            <div class="cards">
+
+                <div class="card-item">
+                    <img src="watch.jpg" alt="watch.jpg" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Helios </p>
+                        <p class="text-center">watch</p>
+                        <p class="text-center">7000 only</p>
+                        <p class="text-center">min 20% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="TV.png" alt="TV" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Sony </p>
+                        <p class="text-center">TV</p>
+                        <p class="text-center">28000 only</p>
+                        <p class="text-center">min 15% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="firdge.png" alt="firdge" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Sony </p>
+                        <p class="text-center">firdge</p>
+                        <p class="text-center">44000 only</p>
+                        <p class="text-center">min 65% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="boat.png" alt="ear-buds" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">boat </p>
+                        <p class="text-center">ear-buds</p>
+                        <p class="text-center">1500 only</p>
+                        <p class="text-center">min 5% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="smartwatch.png" alt="smart-watch" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Starmax Technology </p>
+                        <p class="text-center">smart-watch</p>
+                        <p class="text-center">5000 only</p>
+                        <p class="text-center">min 30% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="iphone.png" alt="phone" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Apple </p>
+                        <p class="text-center">Iphone</p>
+                        <p class="text-center">1,50,000 only</p>
+                        <p class="text-center">min 64% off</p>
+                    </div>
+                </div>
+            </div>
+            <h3 class="my1">20%-40% off</h3>
+            <div class="more">VIEW ALL</div>
+            <div class="cards">
+
+                <div class="card-item">
+                    <img src="shoes.png" alt="shoes" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">FLYNCE Sneakers for Women - Embellished Casual Women's Sneakers - Sneaker Shoe</p>
+                        <p class="text-center">6000 only</p>
+                        <p class="text-center">min 85% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="tshirt.png" alt="tshirt" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">THE BOYS </p>
+                        <p class="text-center">T-Shirt</p>
+                        <p class="text-center">600 only</p>
+                        <p class="text-center">min 20% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="ccycle.png" alt="cycle" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">SPort </p>
+                        <p class="text-center">cycle</p>
+                        <p class="text-center">4000 only</p>
+                        <p class="text-center">min 55% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="bat.png" alt="Cricket bat" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">MRF </p>
+                        <p class="text-center">Cricket bat</p>
+                        <p class="text-center">3000 only</p>
+                        <p class="text-center">min 15% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="toy.png" alt="toy" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Super </p>
+                        <p class="text-center">Robot</p>
+                        <p class="text-center">1000 only</p>
+                        <p class="text-center">min 10% off</p>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="gogals.png" alt="gogals" />
+                    <div class="lines">
+                        <br>
+                        <p class="text-center">Black </p>
+                        <p class="text-center">gogals</p>
+                        <p class="text-center">900 only</p>
+                        <p class="text-center">min 80% off</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="all-center">
+        <p>Lakshya_jivani@gmail.com</p>
+    </footer>
+
+</body>
+
+</html>
